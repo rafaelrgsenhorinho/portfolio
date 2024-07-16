@@ -1,7 +1,7 @@
 window.addEventListener('scroll', function() {
     let scrollTop = window.scrollY || document.documentElement.scrollTop;
 
-    let navegation = this.document.getElementById('navegation');
+    let navegation = document.getElementById('navegation');
     let headLine = document.getElementById('head-line');
     let imageHead = document.getElementById('image-head');
     
@@ -10,7 +10,7 @@ window.addEventListener('scroll', function() {
 
     if (scrollTop <= maxScroll) {
 
-        navegation.style.background = `rgba(0, 0, 0, 0)`;
+        navegation.style.background = `rgba(0, 0, 0, ${(scrollTop / maxScroll)})`;
 
         headLine.style.transform = `translateY(${scrollTop * -0.28}px)`;
 
@@ -19,7 +19,7 @@ window.addEventListener('scroll', function() {
 
     } else {
 
-        navegation.style.background = `rgba(0, 0, 0, ${(1 + scrollTop / maxScroll)})`;
+        navegation.style.background = `rgba(0, 0, 0, 1)`;
 
         headLine.style.transform = `translateY(${maxScroll * -0.28}px)`;
 
@@ -56,8 +56,8 @@ window.addEventListener('mousemove', function(event) {
     const translateX = (mouseX - centerX) * 0.008;
     const translateY = (mouseY - centerY) * 0.008;
 
-    const translateXmouth = (mouseX - centerX) * 0.005;
-    const translateYmouth = (mouseY - centerY) * 0.005;
+    const translateXmouth = (mouseX - centerX) * 0.008;
+    const translateYmouth = (mouseY - centerY) * 0.008;
     
     imageHead.style.transform = `translateY(${currentTranslateY}) scale(${currentScale}) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
     eyeLeft.style.transform = `translateX(${translateX}px) translateY(${translateY}px)`;
@@ -66,13 +66,17 @@ window.addEventListener('mousemove', function(event) {
 });
 
 document.addEventListener('click', function() {
-    let imageHead = document.getElementById('head-anima');
-    imageHead.classList.add('vertical-shake');
+    let headAnima = document.getElementById('head-anima');
+    let mouth = document.getElementById('mouth-anima');
+
+
+    headAnima.classList.add('vertical-shake');
+    mouth.classList.add('laugh');
   
-    // Remove the jiggle animation class after the animation completes
     setTimeout(function() {
-        imageHead.classList.remove('vertical-shake');
-    }, 1200); // Adjust the time (in milliseconds) based on your animation duration
+        headAnima.classList.remove('vertical-shake');
+        mouth.classList.remove('laugh');
+    }, 1200);
 });
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -104,4 +108,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+
+const carousel = document.querySelector(".skills-list").cloneNode(true);
+document.querySelector(".skills-track").appendChild(carousel);
 

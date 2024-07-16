@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Rafael Senhorinho</title>
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
@@ -30,10 +30,12 @@
                             <img src="./assets/images/Head/Raf_Head_3.svg" alt="Main Icon of the page">
                         </picture>
                         <div class="eyes">
-                            <div class="eye eye-left" id="eye-left"></div>
-                            <div class="eye eye-right" id="eye-right"></div>
+                            <div class="eye eye-left left-anima" id="eye-left"></div>
+                            <div class="eye eye-right right-anima" id="eye-right"></div>
                         </div>
-                        <div class="mouth" id="mouth"></div>
+                        <div class="mouth-anima" id="mouth-anima">
+                            <div class="mouth" id="mouth"></div>
+                        </div>
                     </div>
                 </div>
                 
@@ -64,9 +66,6 @@
     <main>
 
         <section id="info" class="info">
-            <picture>
-                <img src="./assets/images/subtitle_one.svg" alt="Subtitle name">
-            </picture>
             <div class="profile">
                 <h2>About me</h2>
                 <div class="profile-content">
@@ -74,47 +73,49 @@
                         <img src="./assets/images/profile-photo.png" alt="A profile photo">
                     </picture>
                     <p>
-                        As a professional in career migration, from Design to Development, I bring from my experience a collaborative approach and assertive communication, which allows me to work well in a team and contribute to a productive and creative work environment.
-                        <br><br>
-                        Despite coming from a creative area, I already have knowledge in Technology, which I developed during my technical degree, where, through it, I started my studies in programming and developed a solid foundation in logic, and now I specialize with higher education in Systems Analysis and Development.
-                        <br><br>
-                        I have knowledge in HTML, CSS, JS, Node.js, Angular, C#, Python, among others, and I'm always looking to learn new technologies. In addition, I have problem solving skills, agile and logical thinking, which are essential in the development area. I am excited to apply my skills and knowledge in a challenging and collaborative technology environment.
+                        I am a Developer with experience in Design. I have a background in IT and Design, and I am currently pursuing a degree in Systems Analysis and Development. I have hard skills like HTML, CSS, JavaScript, Node.js, React, C#, and Python, and I am always eager to learn other languages and technologies. 
+                        <br><br> 
+                        I am excited to apply my knowledge and grow through challenges and creating solutions, whether in a Portuguese or English-speaking environment, always aiming for the benefit and growth of the organization and professional development.
                     </p>
                 </div>
             </div>
             <div class="skills-bar" id="skills-bar">
                 <div class="main-skills">
                     <h3>Main Skills</h3>
-                    <ul class="skills-list">
-                        <li>
-                            <img src="./assets/images/icons/git_icon.svg" alt="GIT">
-                            GIT
-                        </li>
-                        <li>
-                            <img src="./assets/images/icons/html_icon.svg" alt="HTML">
-                            HTML5
-                        </li>
-                        <li>
-                            <img src="./assets/images/icons/css_icon.svg" alt="CSS">
-                            CSS3
-                        </li>
-                        <li>
-                            <img src="./assets/images/icons/js_icon.svg" alt="Javascript">
-                            JavaScript
-                        </li>
-                        <li>
-                            <img src="./assets/images/icons/react_icon.svg" alt="React">
-                            React
-                        </li>
-                        <li>
-                            <img src="./assets/images/icons/typescript_icon.svg" alt="TypeScript">
-                            TypeScript
-                        </li>
-                        <li>
-                            <img src="./assets/images/icons/csharp_icon.svg" alt="CSharp">
-                            CSharp
-                        </li>
-                    </ul>
+                    <div class="skills-track">
+                        <ul class="skills-list" id="skills-list">
+                            <li class="carousel-card">
+                                <img src="./assets/images/icons/git_icon.svg" alt="GIT">
+                                GIT
+                            </li>
+                            <li class="carousel-card">
+                                <img src="./assets/images/icons/html_icon.svg" alt="HTML">
+                                HTML5
+                            </li>
+                            <li class="carousel-card">
+                                <img src="./assets/images/icons/css_icon.svg" alt="CSS">
+                                CSS3
+                            </li>
+                            <li class="carousel-card">
+                                <img src="./assets/images/icons/js_icon.svg" alt="Javascript">
+                                JavaScript
+                            </li>
+                            <li class="carousel-card">
+                                <img src="./assets/images/icons/react_icon.svg" alt="React">
+                                React
+                            </li>
+                            <li class="carousel-card">
+                                <img src="./assets/images/icons/typescript_icon.svg" alt="TypeScript">
+                                TypeScript
+                            </li>
+                            <li class="carousel-card">
+                                <img src="./assets/images/icons/csharp_icon.svg" alt="CSharp">
+                                CSharp
+                            </li>
+                        </ul>
+                        
+                    </div>
+                    
                 </div>
             </div>
         </section>
@@ -260,7 +261,7 @@
                 <input type="text" class="contact-element contact-phone-number" id="phone-number">
                 <label for="email">Email</label>
                 <input type="text" class="contact-element contact-email" id="email">
-                <label for="namessageme">Message</label>
+                <label for="message">Message</label>
                 <textarea name="contact-text" class="contact-element contact-text" id="message"></textarea>
                 <button type="submit" class="btn-contact-submit">Send</button>
             </div>
