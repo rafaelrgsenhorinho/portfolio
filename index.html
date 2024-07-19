@@ -3,21 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>Rafael Senhorinho</title>
+    <title>Rafael Senhorinho Portfolio</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
 </head>
 <body>
-
+    
     <header class="head-page">
         <nav class="navegation" id="navegation">
-            <a href="">
+            <a href="#" id="navHome">
                 <picture>
                     <img src="./assets/images/icons/casa.svg" alt="Work icon">
                 </picture>
                 Home
 
             </a>
-            <a href="#info">
+            <a href="#info" id="navAbout">
                 <picture>
                     <img src="./assets/images/icons/do-utilizador.svg" alt="Work icon">
                 </picture>
@@ -27,7 +28,7 @@
                 <div class="head-anima" id="head-anima">
                     <div class="image-head" id="image-head">
                         <picture>
-                            <img src="./assets/images/Head/Raf_Head_3.svg" alt="Main Icon of the page">
+                            <img src="./assets/images/Head/Raf_Head_3.svg" alt="Main Icon of the page" id="charhead">
                         </picture>
                         <div class="eyes">
                             <div class="eye eye-left left-anima" id="eye-left"></div>
@@ -40,23 +41,24 @@
                 </div>
                 
             </div>
-            <a href="#works">
+            <a href="#works" id="navWorks">
                 <picture>
                     <img src="./assets/images/icons/pasta.svg" alt="Work icon">
                 </picture>
                 Works
             </a>
-            <a href="#contact">
+            <a href="#contact" id="NavContact">
                 <picture>
                     <img src="./assets/images/icons/envelope.svg" alt="Work icon">
                 </picture>
                 Contact
             </a>
+            <button class="translate-btn" id="translate-btn">En</button>
         </nav>
         
         <div class="head-box">
-            <h1 class="title-name">Software Developer</h1>
-            <h3 class="subtitle-name">Hi, I'm Rafael, a software developer</h3>
+            <h1 class="title-name" id="titleName">Software Developer</h1>
+            <h2 class="subtitle-name" id="subtitleName">Hi, I'm Rafael, a software developer and designer</h2>
         </div>
         <picture class="head-bar">
             <img src="./assets/images/bar.svg" alt="Separation bar">
@@ -67,12 +69,12 @@
 
         <section id="info" class="info">
             <div class="profile">
-                <h2>About me</h2>
+                <h3 id="sectionAbout">About me</h3>
                 <div class="profile-content">
                     <picture>
-                        <img src="./assets/images/profile-photo.png" alt="A profile photo">
+                        <img src="./assets/images/profile-photo.png" alt="A profile photo" id="profile-photo">
                     </picture>
-                    <p>
+                    <p id="profileText">
                         I am a Developer with experience in Design. I have a background in IT and Design, and I am currently pursuing a degree in Systems Analysis and Development. I have hard skills like HTML, CSS, JavaScript, Node.js, React, C#, and Python, and I am always eager to learn other languages and technologies. 
                         <br><br> 
                         I am excited to apply my knowledge and grow through challenges and creating solutions, whether in a Portuguese or English-speaking environment, always aiming for the benefit and growth of the organization and professional development.
@@ -81,7 +83,7 @@
             </div>
             <div class="skills-bar" id="skills-bar">
                 <div class="main-skills">
-                    <h3>Main Skills</h3>
+                    <h4 id="skills">Main Skills</h4>
                     <div class="skills-track">
                         <ul class="skills-list" id="skills-list">
                             <li class="carousel-card">
@@ -121,10 +123,41 @@
         </section>
 
         <section id="works" class="works">
-            <h2>Works</h2>
-            <h3>Projects & Practices</h3>
+            <h3 id="sectionWorks">Works</h3>
+            <h4 id="subtitleWorks">Projects & Practices</h4>
             <div class="main-works">
                 <div class="work-element" id="work-element">
+                    <span class="work-name" id="workNameCover">Portfolio</span>
+                    <div class="work-content">
+                        <div class="content-container" id="contentContainer">
+                            <picture>
+                                <img src="./assets/images/projects/portifolio-image.png" alt="Image of Portfolio website">
+                            </picture>
+                            <div class="work-description">
+                                <div class="title-buttons">
+                                    <h4 id="workName">Portfolio Website</h4>
+                                    <div class="buttons-container">
+                                        <a href="#"><button class="btn-work" id="workGitHub">GitHub Project</button></a>
+                                        <a href="#"><button class="btn-work" id="workLive">Live Project</button></a>
+                                    </div>
+                                </div>
+                                <p id="workTextProject">Este site foi desenvolvido com HTML, CSS e JavaScript para mostrar minhas habilidades e projetos na área de desenvolvimento web. Ele possui um design responsivo, com elementos interativos, e com codificação otimizada para SEO e performance.</p>
+                            </div>
+                                <div class="icons-container">
+                                    <picture>
+                                        <img src="./assets/images/icons/html_icon.svg" alt="">
+                                    </picture>
+                                    <picture>
+                                        <img src="./assets/images/icons/css_icon.svg" alt="">
+                                    </picture>
+                                    <picture>
+                                        <img src="./assets/images/icons/js_icon.svg" alt="">
+                                    </picture>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-element">
                     <span class="work-name">Portfolio</span>
                     <div class="work-content">
                         <div class="content-container">
@@ -133,7 +166,7 @@
                             </picture>
                             <div class="work-description">
                                 <div class="title-buttons">
-                                    <h3>Portfolio Website</h3>
+                                    <h4>Portfolio Website</h4>
                                     <div class="buttons-container">
                                         <a href="#"><button class="btn-work">GitHub Project</button></a>
                                         <a href="#"><button class="btn-work">Live Project</button></a>
@@ -164,7 +197,7 @@
                             </picture>
                             <div class="work-description">
                                 <div class="title-buttons">
-                                    <h3>Portfolio Website</h3>
+                                    <h4>Portfolio Website</h4>
                                     <div class="buttons-container">
                                         <a href="#"><button class="btn-work">GitHub Project</button></a>
                                         <a href="#"><button class="btn-work">Live Project</button></a>
@@ -195,38 +228,7 @@
                             </picture>
                             <div class="work-description">
                                 <div class="title-buttons">
-                                    <h3>Portfolio Website</h3>
-                                    <div class="buttons-container">
-                                        <a href="#"><button class="btn-work">GitHub Project</button></a>
-                                        <a href="#"><button class="btn-work">Live Project</button></a>
-                                    </div>
-                                </div>
-                                <p>Este site foi desenvolvido com HTML, CSS e JavaScript para mostrar minhas habilidades e projetos na área de desenvolvimento web. Ele possui um design responsivo, com elementos interativos, e com codificação otimizada para SEO e performance.</p>
-                            </div>
-                                <div class="icons-container">
-                                    <picture>
-                                        <img src="./assets/images/icons/html_icon.svg" alt="">
-                                    </picture>
-                                    <picture>
-                                        <img src="./assets/images/icons/css_icon.svg" alt="">
-                                    </picture>
-                                    <picture>
-                                        <img src="./assets/images/icons/js_icon.svg" alt="">
-                                    </picture>
-                                </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="work-element">
-                    <span class="work-name">Portfolio</span>
-                    <div class="work-content">
-                        <div class="content-container">
-                            <picture>
-                                <img src="./assets/images/projects/portifolio-image.png" alt="Image of Portfolio website">
-                            </picture>
-                            <div class="work-description">
-                                <div class="title-buttons">
-                                    <h3>Portfolio Website</h3>
+                                    <h4>Portfolio Website</h4>
                                     <div class="buttons-container">
                                         <a href="#"><button class="btn-work">GitHub Project</button></a>
                                         <a href="#"><button class="btn-work">Live Project</button></a>
@@ -253,24 +255,23 @@
         </section>
 
         <section id="contact" class="contact">
-            <h2>Contact</h2>
-            <div class="contact-form">
-                <label for="name">Name</label>
-                <input type="text" class="contact-element contact-name" id="name">
-                <label for="phone-number">Phone Number</label>
-                <input type="text" class="contact-element contact-phone-number" id="phone-number">
-                <label for="email">Email</label>
-                <input type="text" class="contact-element contact-email" id="email">
-                <label for="message">Message</label>
-                <textarea name="contact-text" class="contact-element contact-text" id="message"></textarea>
+            <h3 id="sectionContact">Contact</h3>
+            <form class="contact-form" action="https://formsubmit.co/rafaelrgsenhorinho@gmail.com" method="POST">
+                <input type="hidden" name="_template" value="table">
+                <label for="name" id="contactName">Name</label>
+                <input type="text" name="name" class="contact-element contact-name" autocomplete="on" id="name" required>
+                <label for="email" id="contactEmail">Email</label>
+                <input type="email" name="email" class="contact-element contact-email" autocomplete="on" id="email" required>
+                <label for="message" id="contactMessage">Message</label>
+                <textarea name="text" class="contact-element contact-text" id="message" required></textarea>
                 <button type="submit" class="btn-contact-submit">Send</button>
-            </div>
+            </form>
         </section>
     </main>
 
     <footer id="footer" class="footer">
         <div class="footer-itens">
-            <h4>Follow me on social media</h4>
+            <h5 id="footerText">Follow me on social media</h5>
             <ul class="social-media-itens">    
                 <li><a href="https://www.linkedin.com/in/rafaelsenhorinho/"><img src="./assets/images/icons/linkedin.png" alt="LinkedIn" width="35px"></a></li>
                 <li><a href="https://github.com/rafaelrgsenhorinho"><img src="./assets/images/icons/github.png" alt="GitHub" width="35px"></a></li>
@@ -279,5 +280,7 @@
         <span>Copyright © 2024 Rafael Senhorinho</span>
     </footer>
     <script src="./assets/js/script.js"></script>
+    <script src="./utils/api.js"></script>
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>

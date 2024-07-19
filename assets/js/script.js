@@ -1,3 +1,5 @@
+//Character head
+
 window.addEventListener('scroll', function() {
     let scrollTop = window.scrollY || document.documentElement.scrollTop;
 
@@ -79,6 +81,8 @@ document.addEventListener('click', function() {
     }, 1200);
 });
 
+//Work cards
+
 document.addEventListener('DOMContentLoaded', () => {
     const columns = document.querySelectorAll('.work-element');
     const innerWorkElements = document.querySelectorAll('.work-content');
@@ -109,7 +113,34 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+//Track Skill
 
 const carousel = document.querySelector(".skills-list").cloneNode(true);
 document.querySelector(".skills-track").appendChild(carousel);
 
+//Mouth animation
+
+function switchAnimation(newAnimationClass) {
+    const mouthElement = document.getElementById('mouth');
+
+    // Remove all animation classes
+    mouthElement.classList.remove('mouthzero', 'mouthone', 'mouthtwo');
+
+    // Temporarily force reflow to restart animation
+    void mouthElement.offsetWidth;
+
+    // Add the new animation class
+    mouthElement.classList.add(newAnimationClass);
+}
+
+document.getElementById('charhead').addEventListener('click', function() {
+    switchAnimation('mouthzero');
+});
+
+document.getElementById('profile-photo').addEventListener('click', function() {
+    switchAnimation('mouthone');
+});
+
+document.getElementById('work-element').addEventListener('click', function() {
+    switchAnimation('mouthtwo');
+});

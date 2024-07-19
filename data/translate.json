@@ -1,0 +1,58 @@
+{
+    "en": {
+        "navHome": "Home",
+        "navAbout": "About",
+        "navWorks": "Projects",
+        "navContact": "Contact",
+        "translate-btn": "EN",
+        "titleName": "Software Developer",
+        "subtitleName": "Hi, I’m Rafael, a Software Developer and Designer",
+        "sectionAbout": "About",
+        "profileText": "I am a developer with experience in Design. I have a background in IT and Design, and I am currently pursuing a degree in Systems Analysis and Development. I have technical skills in HTML, CSS, JavaScript, Node.js, React, C#, and Python, and I am always eager to learn other languages and technologies. <br> <br> I am excited to apply my knowledge and grow through challenges and creating solutions, whether in a Portuguese or English-speaking environment, always aiming for the benefit and growth of the organization and professional development.",
+        "skills": "Skills",
+        "sectionWorks":"Projects",
+        "subtitleWorks":"Practices and Projects",
+        "work-element": {
+            "workNameCover":"Portfolio",
+            "contentContainer": {
+                "workName":"Portfolio Website",
+                "workGitHub":"GitHub",
+                "workLive":"Live Version",
+                "workTextProject":"This website was developed with HTML, CSS, and JavaScript to showcase my skills and projects in web development. It features a responsive design, interactive elements, and optimized coding for SEO and performance."
+            }
+        },
+        "sectionContact":"Contact",
+        "contactName":"Name",
+        "contactEmail":"Email",
+        "contactMessage":"Message",
+        "footerText":"Follow me on social media"
+    },
+    "pt": {
+        "navHome": "Início",
+        "navAbout": "Sobre",
+        "navWorks": "Projetos",
+        "navContact": "Contato",
+        "translate-btn": "PT",
+        "titleName": "Desenvolvedor de Software",
+        "subtitleName": "Oi, sou Rafael, um desenvolvedor de Software e Designer",
+        "sectionAbout": "Sobre",
+        "profileText": "Sou um desenvolvedor com experiência em Design. Tenho formação em TI e Design, e atualmente estou cursando Análise e Desenvolvimento de Sistemas. Tenho habilidades técnicas em HTML, CSS, JavaScript, Node.js, React, C# e Python, e estou sempre ansioso para aprender outras linguagens e tecnologias. <br> <br> Estou animado para aplicar meus conhecimentos e crescer através de desafios e criação de soluções, seja em um ambiente de fala portuguesa ou inglesa, sempre visando o benefício e crescimento da organização e o desenvolvimento profissional.",
+        "skills": "Habilidades",
+        "sectionWorks":"Projetos",
+        "subtitleWorks":"Práticas e Projetos",
+        "work-element": {
+            "workNameCover":"Portfolio",
+            "contentContainer": {
+                "workName":"Portfolio Website",
+                "workGitHub":"GitHub",
+                "workLive":"Versão Live",
+                "workTextProject":"Este site foi desenvolvido com HTML, CSS e JavaScript para mostrar minhas habilidades e projetos na área de desenvolvimento web. Ele possui um design responsivo, com elementos interativos, e com codificação otimizada para SEO e performance."
+            }
+        },
+        "sectionContact":"Contato",
+        "contactName":"Nome",
+        "contactEmail":"Email",
+        "contactMessage":"Mensagem",
+        "footerText":"Me siga nas redes sociais"
+    }
+}

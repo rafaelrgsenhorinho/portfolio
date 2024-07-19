@@ -7,7 +7,7 @@
     box-sizing: border-box;
     text-decoration: none;
     color: white;
-    font-family: "Roboto", sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 html {
@@ -16,7 +16,8 @@ html {
 
 body {
     background: grey;
-    line-height: 1.5;
+    line-height: 1.5; /* Hides overflow so the element can go beyond the viewport */
+    
 }
 
 h1 {
@@ -25,18 +26,25 @@ h1 {
     background: linear-gradient(to right, #eee, #2ed5ff);
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    text-align: center;
+    line-height: 4rem;
 }
 
 h2 {
+    font-size: 2.25rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+h3 {
     font-size: 4rem;
     font-weight: 400;
-
     position: relative;
     display: inline-block;
     padding-bottom: 5px;
 }
 
-h2::after {
+h3::after {
     content: "";
     position: absolute;
     left: 0;
@@ -46,8 +54,7 @@ h2::after {
     background: linear-gradient(to right, #006891 ,  #51bfff00);
 }
 
-
-h3 {
+h4 {
     font-size: 1.5rem;
     font-weight: 400;
 }
@@ -87,10 +94,9 @@ li {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     background-color: rgba(0, 0, 0, 0);
-    gap: 10rem;
     padding: 0.5rem 0 0.5rem 0;
     border: none;
 }
@@ -101,7 +107,7 @@ li {
     overflow: hidden;
     display: flex;
     gap: 10px;
-    color: #e2e2e2;
+    color: #cacaca;
     transition: filter 0.3s ease;
 }
 
@@ -111,11 +117,11 @@ li {
 
 
 .navegation a:nth-child(2) {
-    margin-right: 12rem;
+    margin-right: 3rem;
 }
 
 .navegation a:nth-child(4) {
-    margin-left: 12rem;
+    margin-left: 3rem;
 }
 
 .navegation a img {
@@ -183,9 +189,9 @@ li {
 .mouth {
     width: 50px;
     height: 20px;
+    border-radius: 10px 10px 150px 150px;
     filter: drop-shadow(0px 0px 10px whitesmoke);
     background-color: rgb(255, 255, 255);
-    border-radius: 10px 10px 150px 150px;
     border: 5px solid rgb(255, 255, 255);
 }
 
@@ -195,11 +201,18 @@ li {
     left: 41%;
     top: 80%;
 }
-    
-.mouth-anima.laugh {
-    animation: laugh 0.35s infinite;
-    scale: 100%;
-  }
+
+.mouthzero {
+    animation: mouthzero 1s;
+}
+
+.mouthone {
+    animation: mouthone 1s;
+}
+
+.mouthtwo {
+    animation: mouthtwo 1s;
+}
 
 .head-box {
     display: inherit;
@@ -209,6 +222,82 @@ li {
     padding-top: 28rem;
     gap: 1rem;
 }
+
+.translate-btn {
+    position: absolute;
+    left: calc(100% - 6rem);
+    padding: 6px 16px;
+    border-radius: 7px;
+    border: 1px solid rgb(61, 106, 255);
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    background: transparent;
+    color: #fff;
+    overflow: hidden;
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+  }
+  
+  .translate-btn:hover {
+    background: rgb(61, 106, 255);
+    box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+  }
+  
+  .translate-btn:hover::before {
+    -webkit-animation: sh02 0.5s 0s linear;
+    -moz-animation: sh02 0.5s 0s linear;
+    animation: sh02 0.5s 0s linear;
+  }
+  
+  .translate-btn::before {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 86%;
+    position: absolute;
+    top: 7%;
+    left: 0%;
+    opacity: 0;
+    background: #fff;
+    box-shadow: 0 0 50px 30px #fff;
+    -webkit-transform: skewX(-20deg);
+    -moz-transform: skewX(-20deg);
+    -ms-transform: skewX(-20deg);
+    -o-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+  }
+  
+  @keyframes sh02 {
+    from {
+      opacity: 0;
+      left: 0%;
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  
+    to {
+      opacity: 0;
+      left: 100%;
+    }
+  }
+  
+  .translate-btn:active {
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: box-shadow 0.2s ease-in;
+    -moz-transition: box-shadow 0.2s ease-in;
+    transition: box-shadow 0.2s ease-in;
+  }
+  
+
 
 .head-bar {
     margin-top: auto;
@@ -239,7 +328,7 @@ li {
     gap: 4rem;
 }
 
-.profile h2::after {
+.profile h3::after {
     background: linear-gradient(to right, #0da6ff ,  #51bfff00);
 }
 
@@ -248,26 +337,30 @@ li {
     justify-content: center;
     align-items: center;
     padding-top: 3rem;
+    gap: 2rem;
+    margin: 2rem;
+    
 }
 
 .profile-content p {
     border: solid 2px white;
     padding: 2rem;
     border-radius: 2rem;
-    width: 35%;
+    width: 100%;
+    max-width: 495px;
 }
 
 .profile-content picture, .profile-content img  {
     width: 100%;
-    max-width: 493px;
-    max-height: 493px;
+    max-width: 450px;
+    max-height: 450px;
 }
 
 .skills-bar {
     background-color: #5CB1FF;
     height: 14px;
     width: 100%;
-    max-width: 1920px;
+    max-width: 2560px;
     position: relative;
     top: 15rem;
     background-image:repeating-linear-gradient( -45deg, #51bfff ,  #51bfff 12px, rgba(111, 221, 255, 0.6) 10px, rgba(111, 221, 255, 0.6) 20px ); 
@@ -279,15 +372,19 @@ li {
     flex-direction: column;
     align-items: center;
     position: relative;
-    top: -9.9rem;
+    top: -11.5rem;
     gap: 5rem;
+}
+
+.main-skills h4 {
+    font-size: 2.5rem;
+    font-weight: 300;
 }
 
 .skills-track {
     overflow: hidden;
     white-space: nowrap;
     width: 100%;
-    max-width: 1920px;
     position: relative;
 }
 
@@ -331,16 +428,17 @@ li {
     overflow: hidden;
 }
 
-.works h2,
-.works h3 {
+.works h3,
+.works h4 {
     color: #000000;
 }
 .main-works {
     display: inherit;
     align-items: center;
     justify-content: center;
-    margin-top: 4rem;
-    gap: 4rem;
+    margin-top: 2rem;
+    gap: 1rem;
+    width: 100%;
 }
 
 .work-element {
@@ -356,6 +454,8 @@ li {
     overflow: hidden;
     box-shadow: 5px 5px 10px rgba(24, 57, 97, 0.418);
     cursor: pointer;
+    
+    
 }
 
 .work-element:hover {
@@ -368,7 +468,7 @@ li {
     transition: opacity 0.8s ease-in-out;
     position: relative;
     z-index: 1;
-    font-size: 4rem;
+    font-size: 3rem;
     transform: rotateZ(-90deg);
     text-transform: uppercase;
     font-weight: 700;
@@ -390,7 +490,8 @@ li {
     transition: opacity 0.8s ease-in-out;
     position: relative;
     z-index: 1;
-    height: 100%;
+    width: 100%;
+    padding: 1rem;
 }
 
 .work-content.active {
@@ -403,7 +504,8 @@ li {
 
 
 .expanded { 
-    width: 40%;
+    width: 50%;
+    
     background: radial-gradient(at center right, #e2eff7, #ebf3f7);
     box-shadow: inset 5px 5px 8px rgba(25, 90, 151, 0.411);
 }
@@ -425,29 +527,32 @@ li {
     align-items: center;
     justify-content: center;
     gap: 2rem;
-    padding: 4rem 4rem;
     width: 100%;
+    max-width: 800px;
+    margin: 2rem;
 }
 
 .content-container img {
     width: 100%;
+    max-width: 790px;
     border-radius: 1rem;
     overflow: hidden;
 }
 
 .work-description {
     display: flex;
-    gap: 3rem;
+    gap: 1rem;
     justify-content: center;
-    align-items: center;
+    align-items: top;
+    
 }
 
 .work-description p {
     color: #000000;
     border-left: solid 4px;
-    height: 200px;
-    width: 350px;
-    padding: 0 2rem 1rem 1rem;
+    height: 220px;
+    width: 320px;
+    padding-left: 1rem;
     border-image: linear-gradient(to bottom, #071d3f, rgb(62, 145, 255)) 1;
     
 }
@@ -455,9 +560,12 @@ li {
 .title-buttons {
     display: inherit;
     flex-direction: column;
-    justify-content: start;
     align-items: center;
-    gap: 2rem;
+    gap: 1.5rem;
+}
+
+.title-buttons h4 {
+    font-size: 1.75rem;
 }
 
 .buttons-container {
@@ -465,7 +573,6 @@ li {
     flex-direction: column;
     align-items: start;
     gap: 0.5rem;
-    
 }
 
 .buttons-container a {
@@ -480,7 +587,7 @@ li {
     border: solid #143255 2px;
     color: #000000;
     background: transparent;
-    padding: 0.8rem 5rem;
+    padding: 0.8rem 3rem;
     flex: 1;
     border-radius: 1rem;
     font-size: 1.125rem;
@@ -517,7 +624,7 @@ li {
     padding: 8rem 0 8rem 0;
 }
 
-.contact h2 {
+.contact h3 {
     color: #000000;
 }
 
@@ -526,13 +633,16 @@ li {
     flex-direction: column;
     align-items: start;
     justify-content: center;
-    width: 100%;
-    max-width: 30rem;
+    width: calc(100% - 3rem);
+    max-width: 36rem;
+    margin: 0 3rem;
 }
 
 .contact-form label {
     color: #000000;
     padding: 20px 0 10px 0;
+    font-size: 1.25rem;
+    font-weight: 300;
 }
 
 .contact-element {
@@ -540,7 +650,6 @@ li {
     border-bottom: black solid 2px;
     color: #000000;
     width: 100%;
-    max-width: 30rem;
     background: #f8fbff;
     font-size: 1.25rem;
 }
@@ -594,251 +703,4 @@ li {
     display: flex;
     flex-direction: row;
     gap: 1rem;
-}
-
-@media only screen and (max-width:768px) {
-    
-    /*HEADER*/
-    .navegation {
-        gap: 2rem;
-    }
-
-    .navegation a:nth-child(2) {
-        margin-right: 2rem;
-    }
-    
-    .navegation a:nth-child(4) {
-        margin-left: 2rem;
-    }
-
-    .head-line {
-        top: -9.5rem
-    }
-
-    .head-bar img {
-        max-width: 768px;
-    }
-
-    /*INFO*/
-
-    .profile-content {
-        flex-direction: column;
-        gap: 4rem;
-    }
-
-    .profile-content picture, .profile-content img {
-        width: 450px;
-        height: 450px;
-    }
-
-    .profile-content p {
-        width: 75%;
-    }
-
-    .skills-list img {
-        width: 85px;
-        margin: 0 70px;
-    }
-
-    /*WORKS*/
-    .main-works {
-        flex-direction: column;
-    }
-    
-    .work-element {
-        width: 600px;
-        height: 120px;
-    }
-
-    .work-name {
-        transform: rotateZ(0);
-    
-    }
-
-    .content-container {
-        padding: 2rem 2rem;
-    }
-
-    .expanded { 
-        height: 40%;
-    }
-
-    .work-description {
-        gap: 2rem;
-    }
-
-    .title-buttons h3 {
-        font-size: 1.375rem;
-    }
-
-    .btn-work {
-        padding: 0.8rem 2rem;
-    }
-
-    .buttons-container a {
-        width: 100%;
-    }
-}
-
-@media only screen and (max-width:425px) {
-
-    html {
-        font-size: 60%;
-    }
-
-    /*HEADER*/
-
-    .navegation {
-        gap: 2rem;
-    }
-
-    .navegation a {
-        font-size: 0;
-        display: inline-block;
-    }
-
-    .navegation a img {
-        width: 24px;
-    }
-
-    .navegation a:nth-child(2) {
-        margin-right: 1.8rem;
-    }
-    
-    .navegation a:nth-child(4) {
-        margin-left: 1.8rem;
-    }
-
-
-    .head-line {
-        width: 200%; 
-        top: -6.5rem
-    }
-    
-    .image-head {
-        scale: 200%;
-    }
-    
-    .head-anima {
-        scale: 30%;
-        top: 12rem;
-    }
-
-    .title-name {
-        
-    }
-
-    /*INFO*/
-
-    .profile-content picture, .profile-content img  {
-        width: 320px;
-        height: 320px;
-    }
-
-    .main-skills {
-        top: -11rem;
-    }
-
-    .skills-list img {
-        margin: 0 20px;
-    }
-
-    .skills-list li {
-        scale: 70%;
-    }
-
-    /*WORKS*/
-
-    .work-element {
-        width: 400px;
-    }
-
-    .work-description {
-        flex-direction: column;
-    }
-
-    .content-container {
-        width: 100%;
-    }
-
-    .buttons-container {
-        flex-direction: row;
-
-    }
-
-    .work-description p {
-        color: #000000;
-        border-top: solid 4px;
-        border-left: none;
-        height: 120px;
-        width: 370px;
-        border-image: linear-gradient(to right, #071d3f, rgb(62, 145, 255)) 1;
-        padding: 1rem;
-    }
-
-    .icons-container img {
-        width: 40px;
-    }
-}
-
-@media only screen and (max-width:375px) {
-
-    /*INFO*/
-    .profile-content picture, .profile-content img  {
-        width: 260px;
-        height: 260px;
-    }
-
-    .work-element {
-        width: 340px;
-    }
-
-    .content-container {
-        width: 100%;
-    }
-
-    .work-description p {
-        height: 120px;
-        width: 320px;
-    }
-}
-
-@media only screen and (max-width:320px) {
-
-    html {
-        font-size: 50%;
-    }
-    /*HEADER*/
-
-    .navegation {
-        gap: 1rem;
-    }
-
-    .head-line {
-        top: -1rem
-    }
-
-    .head-anima {
-        scale: 28%;
-        top: 7.5rem;
-    }
-
-    /*INFO*/
-    .profile-content picture, .profile-content img  {
-        width: 240px;
-        height: 240px;
-    }
-
-    /*WORKS*/
-
-    .work-element {
-        width: 290px;
-       
-    }
-
-    .work-description p {
-        height: 120px;
-        width: 260px;
-    }
-
 }

@@ -1,0 +1,139 @@
+@media only screen and (max-width:1440px) {
+    .expanded {
+        width: max-content;
+    }
+}
+
+@media only screen and (max-width:860px) {
+    
+    html {
+        font-size: 90%;
+    }
+
+    /*HEADER*/
+
+    .head-line {
+        top: -9.5rem
+    }
+
+    /*INFO*/
+
+    .profile-content {
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+
+    .skills-list img {
+        width: 85px;
+        margin: 0 70px;
+    }
+
+    /*WORKS*/
+    .main-works {
+        flex-direction: column;
+    }
+    
+    .work-element {
+        width: calc(100% - 3rem);
+        max-width: 600px;
+        height: 120px;
+    }
+
+    .work-name {
+        transform: rotateZ(0);
+    }
+
+    .content-container {
+        scale: 100%;
+    }
+
+    .expanded { 
+        height: 40%;
+    }
+
+    .work-description {
+        gap: 2rem;
+    }
+
+    .btn-work {
+        padding: 0.8rem 2rem;
+    }
+
+    .buttons-container a {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:590px) {
+
+    html {
+        font-size: 80%;
+    }
+
+    /*HEADER*/
+
+    .navegation a {
+        font-size: 0;
+        display: inline-block;
+    }
+
+    .navegation a img {
+        width: 24px;
+    }
+
+    .head-line {
+        width: 30%;
+        top: -8rem
+    }
+    
+    .head-anima {
+        scale: 30%;
+        top: 14.5rem;
+    }
+
+    .image-head {
+        scale: 240%;
+    }
+
+    /*INFO*/
+
+    .main-skills {
+        top: -12rem;
+    }
+
+    .skills-list img {
+        margin: 0 20px;
+    }
+
+    .skills-list li {
+        scale: 70%;
+    }
+
+    /*WORKS*/
+
+
+    .work-description {
+        flex-direction: column;
+    }
+
+
+    .buttons-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .work-description p {
+        border-top: solid 4px;
+        border-left: none;
+        height: 200px;
+        width: 100%;
+        max-width: 590px;
+        border-image: linear-gradient(to right, #071d3f, rgb(62, 145, 255)) 1;
+        padding: 1rem;
+    }
+
+    .icons-container img {
+        width: 40px;
+    }
+}
