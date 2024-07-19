@@ -2,6 +2,7 @@
     .expanded {
         width: max-content;
     }
+
 }
 
 @media only screen and (max-width:860px) {
@@ -14,6 +15,13 @@
 
     .head-line {
         top: -9.5rem
+    }
+
+    .translate-btn {
+        left: calc(100% - 50%);
+        top: 2rem;
+        transform: translate(-50%, -50%);
+        font-size: 0.8rem;
     }
 
     /*INFO*/
@@ -94,6 +102,10 @@
 
     .image-head {
         scale: 240%;
+    }
+
+    .head-box {
+        margin: 2rem;
     }
 
     /*INFO*/

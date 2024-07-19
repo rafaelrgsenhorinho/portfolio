@@ -126,7 +126,7 @@ li {
 
 .navegation a img {
     width: 16px;
-    filter: invert(90%);
+    filter: invert(83%) sepia(32%) saturate(0%) hue-rotate(162deg) brightness(97%) contrast(82%);
     transition: filter 0.3s ease;
 }
 
@@ -224,11 +224,12 @@ li {
 }
 
 .translate-btn {
+    z-index: 4;
     position: absolute;
-    left: calc(100% - 6rem);
+    left: calc(100% - 4.5rem);
     padding: 6px 16px;
     border-radius: 7px;
-    border: 1px solid rgb(61, 106, 255);
+    border: 1px solid rgb(65, 185, 255);
     font-size: 14px;
     text-transform: uppercase;
     font-weight: 600;
@@ -243,8 +244,8 @@ li {
   }
   
   .translate-btn:hover {
-    background: rgb(61, 106, 255);
-    box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
+    background: rgb(65, 185, 255);
+    box-shadow: 0 0 30px 5px rgba(65, 185, 255, 0.815);
     -webkit-transition: all 0.2s ease-out;
     -moz-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
@@ -272,22 +273,6 @@ li {
     -ms-transform: skewX(-20deg);
     -o-transform: skewX(-20deg);
     transform: skewX(-20deg);
-  }
-  
-  @keyframes sh02 {
-    from {
-      opacity: 0;
-      left: 0%;
-    }
-  
-    50% {
-      opacity: 1;
-    }
-  
-    to {
-      opacity: 0;
-      left: 100%;
-    }
   }
   
   .translate-btn:active {
@@ -696,7 +681,6 @@ li {
     justify-content: center;
     align-items: center;
     gap: 1rem;
-
 }
 
 .social-media-itens {
