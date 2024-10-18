@@ -12,15 +12,26 @@
         "skills": "Skills",
         "sectionWorks":"Projects",
         "subtitleWorks":"Practices and Projects",
-        "work-element": {
-            "workNameCover":"Portfolio",
-            "contentContainer": {
-                "workName":"Portfolio Website",
-                "workGitHub":"GitHub",
-                "workLive":"Live Version",
-                "workTextProject":"This website was developed with HTML, CSS, and JavaScript to showcase my skills and projects in web development. It features a responsive design, interactive elements, and optimized coding for SEO and performance."
+        "work-element": [
+            {
+                "workNameCover":"Portfolio",
+                "contentContainer": {
+                    "workName":"Portfolio Website",
+                    "workGitHub":"GitHub",
+                    "workLive":"Live Version",
+                    "workTextProject":"This website was developed with HTML, CSS, and JavaScript to showcase my skills and projects in web development. It features a responsive design, interactive elements, and optimized coding for SEO and performance."
+                }
+            },
+            {
+                "workNameCover":"Portfolio",
+                "contentContainer": {
+                    "workName":"Portfolio Website",
+                    "workGitHub":"GitHub",
+                    "workLive":"Live Version",
+                    "workTextProject":"This website was developed with HTML, CSS, and JavaScript to showcase my skills and projects in web development. It features a responsive design, interactive elements, and optimized coding for SEO and performance."
+                }
             }
-        },
+        ],
         "sectionContact":"Contact",
         "contactName":"Name",
         "contactEmail":"Email",
