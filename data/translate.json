@@ -1,102 +1,134 @@
 {
-    "en": {
-        "navHome": "Home",
-        "navAbout": "About",
-        "navWorks": "Projects",
-        "navContact": "Contact",
-        "translate-btn": "EN",
-        "titleName": "Software Developer",
-        "subtitleName": "Hi, I’m Rafael, a Software Developer and Designer",
-        "sectionAbout": "About",
-        "profileText": "I am a Software Developer with a background in IT and Design, and I am currently completing a degree in Systems Analysis and Development. I have experience in HTML, CSS, JavaScript, Node.js, React, C#, and Python, and I am expanding my skills in Artificial Intelligence. My background includes volunteer work at Pipoca Ágil, developing solutions for the healthcare sector, and facilitating Full Stack Development courses at Tera, in addition to freelance projects that enhance my hard skills. <br> <br> Recognized for my leadership, effective communication, and commitment to deliverables, I am passionate about games and also explore projects in this area. I am seeking opportunities to grow and contribute significantly to cutting-edge software innovation and development, aiming to transform the market with skilled technological solutions. I believe that the true strength of efficient products comes from the team’s ability to evolve systems through sustainable innovation, integrating technologies such as the Internet of Things and Artificial Intelligence.",
-        "skills": "Skills",
-        "sectionWorks":"Projects",
-        "subtitleWorks":"Practices and Projects",
-        "work-element": [{
-            "workNameCover":"Portfolio",
-            "contentContainer": {
-                "workName":"Portfolio Website",
-                "workImage":"./assets/images/projects/portifolio-image.png",
-                "workGitHub":"GitHub",
-                "workLive":"Live Version",
-                "workTextProject":"This website was developed with HTML, CSS, and JavaScript to showcase my skills and projects in web development. It features a responsive design, interactive elements, and optimized coding for SEO and performance.",
-                "tech": [
-                    "./assets/images/icons/html_icon.svg",
-                    "./assets/images/icons/css_icon.svg",
-                    "./assets/images/icons/js_icon.svg"
-                ]
-            }
-        },
-        {
-            "workNameCover":"Portfolio 2",
-            "contentContainer": {
-                "workName":"Portfolio Website",
-                "workImage":"./assets/images/projects/portifolio-image.png",
-                "workGitHub":"GitHub",
-                "workLive":"Live Version",
-                "workTextProject":"This website was developed with HTML, CSS, and JavaScript to showcase my skills and projects in web development. It features a responsive design, interactive elements, and optimized coding for SEO and performance.",
-                "tech": [
-                    "./assets/images/icons/html_icon.svg",
-                    "./assets/images/icons/css_icon.svg",
-                    "./assets/images/icons/js_icon.svg"
-                ]
-            }
+  "en": {
+    "navHome": "Home",
+    "navAbout": "About",
+    "navWorks": "Projects",
+    "navContact": "Contact",
+    "translate-btn": "EN",
+    "titleName": "Software Developer",
+    "subtitleName": "Hi, I’m Rafael, a Software Developer and Designer",
+    "sectionAbout": "About",
+    "profileText": "I am a Software Developer with a background in IT and Design, and I am currently completing a degree in Systems Analysis and Development. I have experience in HTML, CSS, JavaScript, Node.js, React, C#, and Python, and I am expanding my skills in Artificial Intelligence. My background includes volunteer work at Pipoca Ágil, developing solutions for the healthcare sector, and facilitating Full Stack Development courses at Tera, in addition to freelance projects that enhance my hard skills. <br> <br> Recognized for my leadership, effective communication, and commitment to deliverables, I am passionate about games and also explore projects in this area. I am seeking opportunities to grow and contribute significantly to cutting-edge software innovation and development, aiming to transform the market with skilled technological solutions. I believe that the true strength of efficient products comes from the team’s ability to evolve systems through sustainable innovation, integrating technologies such as the Internet of Things and Artificial Intelligence.",
+    "skills": "Skills",
+    "sectionWorks": "Projects",
+    "subtitleWorks": "Practices and Projects",
+    "work-element": {
+      "projectOne": {
+        "workNameCover": "Portfolio",
+        "contentContainer": {
+          "workName": "Portfolio Website",
+          "workImage": "./assets/images/projects/portifolio-image.png",
+          "workGitHub": "GitHub",
+          "workLive": "Live Version",
+          "workTextProject": "This website was developed with HTML, CSS, and JavaScript to showcase my skills and projects in web development. It features a responsive design, interactive elements, and optimized coding for SEO and performance.",
+          "tech": [
+            "./assets/images/icons/html_icon.svg",
+            "./assets/images/icons/css_icon.svg",
+            "./assets/images/icons/js_icon.svg"
+          ]
         }
-    ],
-        "sectionContact":"Contact",
-        "contactName":"Name",
-        "contactEmail":"Email",
-        "contactMessage":"Message",
-        "footerText":"Follow me on social media"
+      },
+      "projectTwo": {
+        "workNameCover": "Portfolio 2",
+        "contentContainer": {
+          "workName": "Portfolio Website",
+          "workImage": "./assets/images/projects/portifolio-image.png",
+          "workGitHub": "GitHub",
+          "workLive": "Live Version",
+          "workTextProject": "This website was developed with HTML, CSS, and JavaScript to showcase my skills and projects in web development. It features a responsive design, interactive elements, and optimized coding for SEO and performance.",
+          "tech": [
+            "./assets/images/icons/html_icon.svg",
+            "./assets/images/icons/css_icon.svg",
+            "./assets/images/icons/js_icon.svg"
+          ]
+        }
+      },
+      "projectThree": {
+        "workNameCover": "Portfolio 2",
+        "contentContainer": {
+          "workName": "Portfolio Website",
+          "workImage": "./assets/images/projects/portifolio-image.png",
+          "workGitHub": "GitHub",
+          "workLive": "Live Version",
+          "workTextProject": "This website was developed with HTML, CSS, and JavaScript to showcase my skills and projects in web development. It features a responsive design, interactive elements, and optimized coding for SEO and performance.",
+          "tech": [
+            "./assets/images/icons/html_icon.svg",
+            "./assets/images/icons/css_icon.svg",
+            "./assets/images/icons/js_icon.svg"
+          ]
+        }
+      }
     },
-    "pt": {
-        "navHome": "Início",
-        "navAbout": "Sobre",
-        "navWorks": "Projetos",
-        "navContact": "Contato",
-        "translate-btn": "PT",
-        "titleName": "Desenvolvedor de Software",
-        "subtitleName": "Oi, sou Rafael, um Desenvolvedor de Software e Designer",
-        "sectionAbout": "Sobre",
-        "profileText": "Sou Desenvolvedor de Sofware com formação em TI e Design, e atualmente finalizando uma graduação em Análise e Desenvolvimento de Sistemas. Tenho experiência em HTML, CSS, JavaScript, Node.js, React, C# e Python, e estou expandindo minhas habilidades em Inteligência Artificial. Meu histórico inclui trabalho voluntário no Pipoca Ágil, desenvolvendo soluções para a área de saúde, e facilitação de cursos de Full Stack Development na Tera, além de projetos freelancers que aprimoram minhas hard skills. <br> <br> Reconhecido por minha liderança, comunicação eficaz e compromisso com entregas, sou apaixonado por games e também exploro projetos nessa área. Busco oportunidades para crescer e contribuir significativamente para a inovação e desenvolvimento de software de ponta, visando transformar o mercado com soluções tecnológicas habilidosas. Acredito que a verdadeira força de produtos eficientes vem da capacidade do time em evoluir sistemas por meio da inovação sustentável, integrando tecnologias como Internet das Coisas e Inteligência Artificial.",
-        "skills": "Habilidades",
-        "sectionWorks":"Projetos",
-        "subtitleWorks":"Práticas e Projetos",
-        "work-element": [{
-            "workNameCover":"Portfolio",
-            "contentContainer": {
-                "workName":"Portfolio Website",
-                "workImage":"./assets/images/projects/portifolio-image.png",
-                "workGitHub":"GitHub",
-                "workLive":"Versão Live",
-                "workTextProject":"Este site foi desenvolvido com HTML, CSS e JavaScript para mostrar minhas habilidades e projetos na área de desenvolvimento web. Ele possui um design responsivo, com elementos interativos, e com codificação otimizada para SEO e performance.",
-                "tech": [
-                    "./assets/images/icons/html_icon.svg",
-                    "./assets/images/icons/css_icon.svg",
-                    "./assets/images/icons/js_icon.svg"
-                ]
-            }
-        },
-        {
-            "workNameCover":"Portfolio",
-            "contentContainer": {
-                "workName":"Portfolio Website",
-                "workImage":"./assets/images/projects/portifolio-image.png",
-                "workGitHub":"GitHub",
-                "workLive":"Versão Live",
-                "workTextProject":"Este site foi desenvolvido com HTML, CSS e JavaScript para mostrar minhas habilidades e projetos na área de desenvolvimento web. Ele possui um design responsivo, com elementos interativos, e com codificação otimizada para SEO e performance.",
-                "tech": [
-                    "./assets/images/icons/html_icon.svg",
-                    "./assets/images/icons/css_icon.svg",
-                    "./assets/images/icons/js_icon.svg"
-                ]
-            }
+    "sectionContact": "Contact",
+    "contactName": "Name",
+    "contactEmail": "Email",
+    "contactMessage": "Message",
+    "footerText": "Follow me on social media"
+  },
+  "pt": {
+    "navHome": "Início",
+    "navAbout": "Sobre",
+    "navWorks": "Projetos",
+    "navContact": "Contato",
+    "translate-btn": "PT",
+    "titleName": "Desenvolvedor de Software",
+    "subtitleName": "Oi, sou Rafael, um Desenvolvedor de Software e Designer",
+    "sectionAbout": "Sobre",
+    "profileText": "Sou Desenvolvedor de Sofware com formação em TI e Design, e atualmente finalizando uma graduação em Análise e Desenvolvimento de Sistemas. Tenho experiência em HTML, CSS, JavaScript, Node.js, React, C# e Python, e estou expandindo minhas habilidades em Inteligência Artificial. Meu histórico inclui trabalho voluntário no Pipoca Ágil, desenvolvendo soluções para a área de saúde, e facilitação de cursos de Full Stack Development na Tera, além de projetos freelancers que aprimoram minhas hard skills. <br> <br> Reconhecido por minha liderança, comunicação eficaz e compromisso com entregas, sou apaixonado por games e também exploro projetos nessa área. Busco oportunidades para crescer e contribuir significativamente para a inovação e desenvolvimento de software de ponta, visando transformar o mercado com soluções tecnológicas habilidosas. Acredito que a verdadeira força de produtos eficientes vem da capacidade do time em evoluir sistemas por meio da inovação sustentável, integrando tecnologias como Internet das Coisas e Inteligência Artificial.",
+    "skills": "Habilidades",
+    "sectionWorks": "Projetos",
+    "subtitleWorks": "Práticas e Projetos",
+    "work-element": {
+      "projectOne": {
+        "workNameCover": "Portfolio",
+        "contentContainer": {
+          "workName": "Portfolio Website",
+          "workImage": "./assets/images/projects/portifolio-image.png",
+          "workGitHub": "GitHub",
+          "workLive": "Versão Live",
+          "workTextProject": "Este site foi desenvolvido com HTML, CSS e JavaScript para mostrar minhas habilidades e projetos na área de desenvolvimento web. Ele possui um design responsivo, com elementos interativos, e com codificação otimizada para SEO e performance.",
+          "tech": [
+            "./assets/images/icons/html_icon.svg",
+            "./assets/images/icons/css_icon.svg",
+            "./assets/images/icons/js_icon.svg"
+          ]
         }
-    ],
-        "sectionContact":"Contato",
-        "contactName":"Nome",
-        "contactEmail":"Email",
-        "contactMessage":"Mensagem",
-        "footerText":"Me siga nas redes sociais"
-    }
+      },
+      "projectTwo": {
+        "workNameCover": "Portfolio",
+        "contentContainer": {
+          "workName": "Portfolio Website",
+          "workImage": "./assets/images/projects/portifolio-image.png",
+          "workGitHub": "GitHub",
+          "workLive": "Versão Live",
+          "workTextProject": "Este site foi desenvolvido com HTML, CSS e JavaScript para mostrar minhas habilidades e projetos na área de desenvolvimento web. Ele possui um design responsivo, com elementos interativos, e com codificação otimizada para SEO e performance.",
+          "tech": [
+            "./assets/images/icons/html_icon.svg",
+            "./assets/images/icons/css_icon.svg",
+            "./assets/images/icons/js_icon.svg"
+          ]
+        }
+      },
+      "projectThree": {
+        "workNameCover": "Portfolio",
+        "contentContainer": {
+          "workName": "Portfolio Website",
+          "workImage": "./assets/images/projects/portifolio-image.png",
+          "workGitHub": "GitHub",
+          "workLive": "Versão Live",
+          "workTextProject": "Este site foi desenvolvido com HTML, CSS e JavaScript para mostrar minhas habilidades e projetos na área de desenvolvimento web. Ele possui um design responsivo, com elementos interativos, e com codificação otimizada para SEO e performance.",
+          "tech": [
+            "./assets/images/icons/html_icon.svg",
+            "./assets/images/icons/css_icon.svg",
+            "./assets/images/icons/js_icon.svg"
+          ]
+        }
+      }
+    },
+    "sectionContact": "Contato",
+    "contactName": "Nome",
+    "contactEmail": "Email",
+    "contactMessage": "Mensagem",
+    "footerText": "Me siga nas redes sociais"
+  }
 }
