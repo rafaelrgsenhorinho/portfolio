@@ -40,7 +40,8 @@
         "skills": "Habilidades",
         "sectionWorks":"Projetos",
         "subtitleWorks":"Práticas e Projetos",
-        "work-element": {
+        "work-element": [
+        {
             "workNameCover":"Portfolio",
             "contentContainer": {
                 "workName":"Portfolio Website",
@@ -49,6 +50,16 @@
                 "workTextProject":"Este site foi desenvolvido com HTML, CSS e JavaScript para mostrar minhas habilidades e projetos na área de desenvolvimento web. Ele possui um design responsivo, com elementos interativos, e com codificação otimizada para SEO e performance."
             }
         },
+        {
+            "workNameCover":"Portfolio",
+            "contentContainer": {
+                "workName":"Portfolio Website",
+                "workGitHub":"GitHub",
+                "workLive":"Versão Live",
+                "workTextProject":"Este site foi desenvolvido com HTML, CSS e JavaScript para mostrar minhas habilidades e projetos na área de desenvolvimento web. Ele possui um design responsivo, com elementos interativos, e com codificação otimizada para SEO e performance."
+            }
+        }
+        ],
         "sectionContact":"Contato",
         "contactName":"Nome",
         "contactEmail":"Email",
