@@ -42,7 +42,7 @@ function updateContent(data, language) {
     document.getElementById('contactMessage').innerText = content.contactMessage;
 
     document.getElementById('footerText').textContent = content.footerText;
-}
+}z
 
 // Initialize the page with the default language
 async function initializePage() {
