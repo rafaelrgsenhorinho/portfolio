@@ -31,10 +31,18 @@ function updateContent(data, language) {
 
     document.getElementById('sectionWorks').textContent = content.sectionWorks;
     document.getElementById('subtitleWorks').textContent = content.subtitleWorks;
-    document.getElementById('workName').textContent = content['work-element'].contentContainer.workName;
-    document.getElementById('workGitHub').textContent = content['work-element'].contentContainer.workGitHub;
-    document.getElementById('workLive').textContent = content['work-element'].contentContainer.workLive;
-    document.getElementById('workTextProject').textContent = content['work-element'].contentContainer.workTextProject;
+    
+    const projects = ['projectOne', 'projectTwo', 'projectThree'];
+
+    projects.forEach((project, index) => {
+        const projectContent = content['work-element'][project].contentContainer;
+        
+        // Assuming you have IDs like workName1, workGitHub1, etc.
+        document.getElementById(`workName${index + 1}`).textContent = projectContent.workName;
+        document.getElementById(`workGitHub${index + 1}`).textContent = projectContent.workGitHub;
+        document.getElementById(`workLive${index + 1}`).textContent = projectContent.workLive;
+        document.getElementById(`workTextProject${index + 1}`).textContent = projectContent.workTextProject;
+    });
 
     document.getElementById('sectionContact').textContent = content.sectionContact;
     document.getElementById('contactName').innerText = content.contactName;

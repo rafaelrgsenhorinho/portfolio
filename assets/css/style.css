@@ -478,7 +478,8 @@ li {
     font-weight: 700;
     color: #ffffff;
     translate: 0px 0px 50px;
-
+    line-height: 3rem;
+    text-align: center;
 }
 
 .work-name.active {

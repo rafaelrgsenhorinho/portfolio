@@ -14,7 +14,6 @@
     "subtitleWorks": "Practices and Projects",
     "work-element": {
       "projectOne": {
-        "workNameCover": "Portfolio",
         "contentContainer": {
           "workName": "Portfolio Website",
           "workImage": "./assets/images/projects/portifolio-image.png",
@@ -29,33 +28,21 @@
         }
       },
       "projectTwo": {
-        "workNameCover": "Portfolio 2",
         "contentContainer": {
-          "workName": "Portfolio Website",
+          "workName": "GoSearch",
           "workImage": "./assets/images/projects/portifolio-image.png",
           "workGitHub": "GitHub",
           "workLive": "Live Version",
-          "workTextProject": "This website was developed with HTML, CSS, and JavaScript to showcase my skills and projects in web development. It features a responsive design, interactive elements, and optimized coding for SEO and performance.",
-          "tech": [
-            "./assets/images/icons/html_icon.svg",
-            "./assets/images/icons/css_icon.svg",
-            "./assets/images/icons/js_icon.svg"
-          ]
+          "workTextProject": "GoSearch is a small project that utilizes the Google Search API to create a custom search website. Developed with React and Tailwind CSS, it focuses on providing a modern, personalized, and efficient interface to display search results clearly and adaptively."
         }
       },
       "projectThree": {
-        "workNameCover": "Portfolio 2",
         "contentContainer": {
           "workName": "Portfolio Website",
           "workImage": "./assets/images/projects/portifolio-image.png",
           "workGitHub": "GitHub",
           "workLive": "Live Version",
-          "workTextProject": "This website was developed with HTML, CSS, and JavaScript to showcase my skills and projects in web development. It features a responsive design, interactive elements, and optimized coding for SEO and performance.",
-          "tech": [
-            "./assets/images/icons/html_icon.svg",
-            "./assets/images/icons/css_icon.svg",
-            "./assets/images/icons/js_icon.svg"
-          ]
+          "workTextProject": "This website was developed with HTML, CSS, and JavaScript to showcase my skills and projects in web development. It features a responsive design, interactive elements, and optimized coding for SEO and performance."
         }
       }
     },
@@ -80,37 +67,24 @@
     "subtitleWorks": "Práticas e Projetos",
     "work-element": {
       "projectOne": {
-        "workNameCover": "Portfolio",
         "contentContainer": {
           "workName": "Portfolio Website",
           "workImage": "./assets/images/projects/portifolio-image.png",
           "workGitHub": "GitHub",
           "workLive": "Versão Live",
-          "workTextProject": "Este site foi desenvolvido com HTML, CSS e JavaScript para mostrar minhas habilidades e projetos na área de desenvolvimento web. Ele possui um design responsivo, com elementos interativos, e com codificação otimizada para SEO e performance.",
-          "tech": [
-            "./assets/images/icons/html_icon.svg",
-            "./assets/images/icons/css_icon.svg",
-            "./assets/images/icons/js_icon.svg"
-          ]
+          "workTextProject": "Este site foi desenvolvido com HTML, CSS e JavaScript para mostrar minhas habilidades e projetos na área de desenvolvimento web. Ele possui um design responsivo, com elementos interativos, e com codificação otimizada para SEO e performance."
         }
       },
       "projectTwo": {
-        "workNameCover": "Portfolio",
         "contentContainer": {
-          "workName": "Portfolio Website",
+          "workName": "GoSearch",
           "workImage": "./assets/images/projects/portifolio-image.png",
           "workGitHub": "GitHub",
           "workLive": "Versão Live",
-          "workTextProject": "Este site foi desenvolvido com HTML, CSS e JavaScript para mostrar minhas habilidades e projetos na área de desenvolvimento web. Ele possui um design responsivo, com elementos interativos, e com codificação otimizada para SEO e performance.",
-          "tech": [
-            "./assets/images/icons/html_icon.svg",
-            "./assets/images/icons/css_icon.svg",
-            "./assets/images/icons/js_icon.svg"
-          ]
+          "workTextProject": "GoSearch é um projeto que utiliza a API de pesquisa do Google para criar um site de busca personalizado. Desenvolvido com React e Tailwind CSS, o foco é oferecer uma interface moderna, personalizado e eficiente para exibir resultados de pesquisa de forma clara e adaptável."
         }
       },
       "projectThree": {
-        "workNameCover": "Portfolio",
         "contentContainer": {
           "workName": "Portfolio Website",
           "workImage": "./assets/images/projects/portifolio-image.png",
